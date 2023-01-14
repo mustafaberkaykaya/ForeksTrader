@@ -81,10 +81,8 @@ extension HomeViewController {
     
     private func addSubViews() {
         addSymbolTitleLabel()
-        addFirstCriterionView()
-        addSecondCriterionView()
-        addElementsFirstCriterionView()
-        addElementsSecondCriterionView()
+        addCriterionViews()
+        addElementsToCriterionViews()
         addTableView()
     }
     
@@ -94,21 +92,18 @@ extension HomeViewController {
         symbolTitleLabel.size(CGSize(width: UIScreen.main.bounds.width * 0.4, height: 36))
     }
     
-    private func addFirstCriterionView() {
+    private func addCriterionViews() {
         view.addSubview(firstCriterionView)
         firstCriterionView.topToSuperview(usingSafeArea: true).constant = 10
         firstCriterionView.leftToRight(of: symbolTitleLabel, offset: 8)
         firstCriterionView.size(CGSize(width: 90, height: 36))
-    }
-    
-    private func addSecondCriterionView() {
         view.addSubview(secondCriterionView)
         secondCriterionView.leftToRight(of: firstCriterionView, offset: 16)
         secondCriterionView.topToSuperview(usingSafeArea: true).constant = 10
         secondCriterionView.size(CGSize(width: 90, height: 36))
     }
     
-    private func addElementsFirstCriterionView() {
+    private func addElementsToCriterionViews() {
         firstCriterionView.addSubview(firstCriterionLabel)
         firstCriterionLabel.centerYToSuperview()
         firstCriterionLabel.leftToSuperview().constant = 6
@@ -116,9 +111,6 @@ extension HomeViewController {
         firstCriterionIcon.centerYToSuperview()
         firstCriterionIcon.rightToSuperview().constant = -4
         firstCriterionIcon.size(CGSize(width: 24, height: 24))
-    }
-    
-    private func addElementsSecondCriterionView() {
         secondCriterionView.addSubview(secondCriterionLabel)
         secondCriterionLabel.centerYToSuperview()
         secondCriterionLabel.leftToSuperview().constant = 6
@@ -139,13 +131,13 @@ extension HomeViewController {
 extension HomeViewController {
     
     private func configureContents() {
-        congifureCriterionElements()
+        configureCriterionElements()
         configureDropDownMenus()
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-    private func congifureCriterionElements() {
+    private func configureCriterionElements() {
         firstCriterionView.layer.borderWidth = 2
         firstCriterionView.layer.borderColor = UIColor.appHoney.cgColor
         firstCriterionView.layer.cornerRadius = 12
