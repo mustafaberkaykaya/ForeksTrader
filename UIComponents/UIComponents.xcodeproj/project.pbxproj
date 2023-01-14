@@ -28,6 +28,9 @@
 		E64C90E82972E9D6004545BB /* StringsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90E72972E9D6004545BB /* StringsConstant.swift */; };
 		E64C90EA2972E9ED004545BB /* LocalizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90E92972E9ED004545BB /* LocalizeManager.swift */; };
 		E64C90ED2972EAAA004545BB /* Fonts+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90EC2972EAAA004545BB /* Fonts+Extension.swift */; };
+		E64C90F02972EBB1004545BB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90EF2972EBB1004545BB /* LoadingView.swift */; };
+		E64C90F82972ED6F004545BB /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */; };
+		E64C90FB2972ED9F004545BB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90FA2972ED9F004545BB /* ReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		E64C90E72972E9D6004545BB /* StringsConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsConstant.swift; sourceTree = "<group>"; };
 		E64C90E92972E9ED004545BB /* LocalizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeManager.swift; sourceTree = "<group>"; };
 		E64C90EC2972EAAA004545BB /* Fonts+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Extension.swift"; sourceTree = "<group>"; };
+		E64C90EF2972EBB1004545BB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		E64C90FA2972ED9F004545BB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 		E64C90762972D43D004545BB /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90F92972ED8E004545BB /* Protocols */,
+				E64C90F62972ED53004545BB /* Extension */,
+				E64C90EE2972EB94004545BB /* UIView */,
 				E64C90AD2972E55A004545BB /* Resources */,
 				E64C90772972D43D004545BB /* UIComponents.h */,
 			);
@@ -162,6 +171,30 @@
 				E64C90DD2972E9AE004545BB /* Inter-SemiBold.ttf */,
 			);
 			path = Inter;
+			sourceTree = "<group>";
+		};
+		E64C90EE2972EB94004545BB /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90EF2972EBB1004545BB /* LoadingView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		E64C90F62972ED53004545BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E64C90F92972ED8E004545BB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90FA2972ED9F004545BB /* ReusableView.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F9BA11C7DF2B9A68C808B60E /* Frameworks */ = {
@@ -309,11 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C90F82972ED6F004545BB /* UITableView+Extensions.swift in Sources */,
+				E64C90FB2972ED9F004545BB /* ReusableView.swift in Sources */,
 				E64C90D32972E988004545BB /* Fonts.swift in Sources */,
 				E64C90E82972E9D6004545BB /* StringsConstant.swift in Sources */,
 				E64C90CD2972E95D004545BB /* Assets.swift in Sources */,
 				E64C90D02972E966004545BB /* UIColor+Colors.swift in Sources */,
 				E64C90EA2972E9ED004545BB /* LocalizeManager.swift in Sources */,
+				E64C90F02972EBB1004545BB /* LoadingView.swift in Sources */,
 				E64C90D12972E966004545BB /* UIImage+Images.swift in Sources */,
 				E64C90ED2972EAAA004545BB /* Fonts+Extension.swift in Sources */,
 			);
