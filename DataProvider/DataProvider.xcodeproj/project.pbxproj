@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E64C90642972D3D3004545BB /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E64C90632972D3D3004545BB /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64C90872972DB5F004545BB /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90862972DB5F004545BB /* HttpHeader.swift */; };
+		E64C90892972DB7C004545BB /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90882972DB7C004545BB /* HttpMethod.swift */; };
+		E64C908B2972DBB0004545BB /* NetworkConstracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C908A2972DBB0004545BB /* NetworkConstracts.swift */; };
+		E64C908D2972DBD7004545BB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C908C2972DBD7004545BB /* NetworkError.swift */; };
+		E64C908F2972DBE9004545BB /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C908E2972DBE9004545BB /* NetworkExecuter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E64C90602972D3D3004545BB /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C90632972D3D3004545BB /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		E64C90862972DB5F004545BB /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		E64C90882972DB7C004545BB /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		E64C908A2972DBB0004545BB /* NetworkConstracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstracts.swift; sourceTree = "<group>"; };
+		E64C908C2972DBD7004545BB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E64C908E2972DBE9004545BB /* NetworkExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +55,22 @@
 		E64C90622972D3D3004545BB /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90852972DB4E004545BB /* Network */,
 				E64C90632972D3D3004545BB /* DataProvider.h */,
 			);
 			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		E64C90852972DB4E004545BB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90862972DB5F004545BB /* HttpHeader.swift */,
+				E64C90882972DB7C004545BB /* HttpMethod.swift */,
+				E64C908A2972DBB0004545BB /* NetworkConstracts.swift */,
+				E64C908C2972DBD7004545BB /* NetworkError.swift */,
+				E64C908E2972DBE9004545BB /* NetworkExecuter.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +116,7 @@
 				TargetAttributes = {
 					E64C905F2972D3D3004545BB = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -129,6 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C908B2972DBB0004545BB /* NetworkConstracts.swift in Sources */,
+				E64C908D2972DBD7004545BB /* NetworkError.swift in Sources */,
+				E64C90892972DB7C004545BB /* HttpMethod.swift in Sources */,
+				E64C908F2972DBE9004545BB /* NetworkExecuter.swift in Sources */,
+				E64C90872972DB5F004545BB /* HttpHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +287,7 @@
 		E64C90682972D3D3004545BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +317,7 @@
 		E64C90692972D3D3004545BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
