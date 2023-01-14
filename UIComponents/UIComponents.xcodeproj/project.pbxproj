@@ -31,6 +31,7 @@
 		E64C90F02972EBB1004545BB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90EF2972EBB1004545BB /* LoadingView.swift */; };
 		E64C90F82972ED6F004545BB /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */; };
 		E64C90FB2972ED9F004545BB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90FA2972ED9F004545BB /* ReusableView.swift */; };
+		E64C90FD2972EFAE004545BB /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = E64C90FC2972EFAE004545BB /* swiftgen.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		E64C90EF2972EBB1004545BB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		E64C90FA2972ED9F004545BB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		E64C90FC2972EFAE004545BB /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		E64C90762972D43D004545BB /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90FC2972EFAE004545BB /* swiftgen.yml */,
 				E64C90F92972ED8E004545BB /* Protocols */,
 				E64C90F62972ED53004545BB /* Extension */,
 				E64C90EE2972EB94004545BB /* UIView */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C90FD2972EFAE004545BB /* swiftgen.yml in Resources */,
 				E64C90E62972E9AE004545BB /* Inter-SemiBold.ttf in Resources */,
 				E64C90DF2972E9AE004545BB /* Inter-Light.ttf in Resources */,
 				E64C90E42972E9AE004545BB /* Inter-ExtraLight.ttf in Resources */,
