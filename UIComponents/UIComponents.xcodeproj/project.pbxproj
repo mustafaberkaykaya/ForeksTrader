@@ -9,6 +9,25 @@
 /* Begin PBXBuildFile section */
 		5C0DF6AC938B49006C491D25 /* libPods-UIComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8773D10DFF4B47F5D8B618 /* libPods-UIComponents.a */; };
 		E64C90782972D43D004545BB /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = E64C90772972D43D004545BB /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64C90B42972E5C5004545BB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64C90B32972E5C5004545BB /* Colors.xcassets */; };
+		E64C90B62972E5D1004545BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64C90B52972E5D1004545BB /* Images.xcassets */; };
+		E64C90CB2972E70E004545BB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E64C90CA2972E70E004545BB /* Localizable.strings */; };
+		E64C90CD2972E95D004545BB /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90CC2972E95D004545BB /* Assets.swift */; };
+		E64C90D02972E966004545BB /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90CE2972E966004545BB /* UIColor+Colors.swift */; };
+		E64C90D12972E966004545BB /* UIImage+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90CF2972E966004545BB /* UIImage+Images.swift */; };
+		E64C90D32972E988004545BB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90D22972E988004545BB /* Fonts.swift */; };
+		E64C90DE2972E9AE004545BB /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90D52972E9AE004545BB /* Inter-Medium.ttf */; };
+		E64C90DF2972E9AE004545BB /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90D62972E9AE004545BB /* Inter-Light.ttf */; };
+		E64C90E02972E9AE004545BB /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90D72972E9AE004545BB /* Inter-Thin.ttf */; };
+		E64C90E12972E9AE004545BB /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90D82972E9AE004545BB /* Inter-Bold.ttf */; };
+		E64C90E22972E9AE004545BB /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90D92972E9AE004545BB /* Inter-Regular.ttf */; };
+		E64C90E32972E9AE004545BB /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90DA2972E9AE004545BB /* Inter-ExtraBold.ttf */; };
+		E64C90E42972E9AE004545BB /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90DB2972E9AE004545BB /* Inter-ExtraLight.ttf */; };
+		E64C90E52972E9AE004545BB /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90DC2972E9AE004545BB /* Inter-Black.ttf */; };
+		E64C90E62972E9AE004545BB /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64C90DD2972E9AE004545BB /* Inter-SemiBold.ttf */; };
+		E64C90E82972E9D6004545BB /* StringsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90E72972E9D6004545BB /* StringsConstant.swift */; };
+		E64C90EA2972E9ED004545BB /* LocalizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90E92972E9ED004545BB /* LocalizeManager.swift */; };
+		E64C90ED2972EAAA004545BB /* Fonts+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90EC2972EAAA004545BB /* Fonts+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +36,25 @@
 		CA4E23DD145C0D1E13F229D5 /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
 		E64C90742972D43D004545BB /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C90772972D43D004545BB /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
+		E64C90B32972E5C5004545BB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E64C90B52972E5D1004545BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E64C90CA2972E70E004545BB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E64C90CC2972E95D004545BB /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		E64C90CE2972E966004545BB /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		E64C90CF2972E966004545BB /* UIImage+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Images.swift"; sourceTree = "<group>"; };
+		E64C90D22972E988004545BB /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E64C90D52972E9AE004545BB /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		E64C90D62972E9AE004545BB /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		E64C90D72972E9AE004545BB /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		E64C90D82972E9AE004545BB /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		E64C90D92972E9AE004545BB /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		E64C90DA2972E9AE004545BB /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E64C90DB2972E9AE004545BB /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E64C90DC2972E9AE004545BB /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		E64C90DD2972E9AE004545BB /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		E64C90E72972E9D6004545BB /* StringsConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsConstant.swift; sourceTree = "<group>"; };
+		E64C90E92972E9ED004545BB /* LocalizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeManager.swift; sourceTree = "<group>"; };
+		E64C90EC2972EAAA004545BB /* Fonts+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +100,68 @@
 		E64C90762972D43D004545BB /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90AD2972E55A004545BB /* Resources */,
 				E64C90772972D43D004545BB /* UIComponents.h */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		E64C90AD2972E55A004545BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90B22972E58D004545BB /* Assets */,
+				E64C90B12972E585004545BB /* Fonts */,
+				E64C90B02972E579004545BB /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E64C90B02972E579004545BB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90CA2972E70E004545BB /* Localizable.strings */,
+				E64C90E72972E9D6004545BB /* StringsConstant.swift */,
+				E64C90E92972E9ED004545BB /* LocalizeManager.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		E64C90B12972E585004545BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90D22972E988004545BB /* Fonts.swift */,
+				E64C90D42972E9AE004545BB /* Inter */,
+				E64C90EC2972EAAA004545BB /* Fonts+Extension.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E64C90B22972E58D004545BB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90CC2972E95D004545BB /* Assets.swift */,
+				E64C90CE2972E966004545BB /* UIColor+Colors.swift */,
+				E64C90CF2972E966004545BB /* UIImage+Images.swift */,
+				E64C90B32972E5C5004545BB /* Colors.xcassets */,
+				E64C90B52972E5D1004545BB /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E64C90D42972E9AE004545BB /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90D52972E9AE004545BB /* Inter-Medium.ttf */,
+				E64C90D62972E9AE004545BB /* Inter-Light.ttf */,
+				E64C90D72972E9AE004545BB /* Inter-Thin.ttf */,
+				E64C90D82972E9AE004545BB /* Inter-Bold.ttf */,
+				E64C90D92972E9AE004545BB /* Inter-Regular.ttf */,
+				E64C90DA2972E9AE004545BB /* Inter-ExtraBold.ttf */,
+				E64C90DB2972E9AE004545BB /* Inter-ExtraLight.ttf */,
+				E64C90DC2972E9AE004545BB /* Inter-Black.ttf */,
+				E64C90DD2972E9AE004545BB /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 		F9BA11C7DF2B9A68C808B60E /* Frameworks */ = {
@@ -98,6 +195,7 @@
 				E64C90702972D43D004545BB /* Sources */,
 				E64C90712972D43D004545BB /* Frameworks */,
 				E64C90722972D43D004545BB /* Resources */,
+				E64C90EB2972EA2B004545BB /* Run Swiftgen */,
 			);
 			buildRules = (
 			);
@@ -119,6 +217,7 @@
 				TargetAttributes = {
 					E64C90732972D43D004545BB = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -145,6 +244,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C90E62972E9AE004545BB /* Inter-SemiBold.ttf in Resources */,
+				E64C90DF2972E9AE004545BB /* Inter-Light.ttf in Resources */,
+				E64C90E42972E9AE004545BB /* Inter-ExtraLight.ttf in Resources */,
+				E64C90DE2972E9AE004545BB /* Inter-Medium.ttf in Resources */,
+				E64C90E32972E9AE004545BB /* Inter-ExtraBold.ttf in Resources */,
+				E64C90E02972E9AE004545BB /* Inter-Thin.ttf in Resources */,
+				E64C90E12972E9AE004545BB /* Inter-Bold.ttf in Resources */,
+				E64C90E52972E9AE004545BB /* Inter-Black.ttf in Resources */,
+				E64C90CB2972E70E004545BB /* Localizable.strings in Resources */,
+				E64C90B42972E5C5004545BB /* Colors.xcassets in Resources */,
+				E64C90E22972E9AE004545BB /* Inter-Regular.ttf in Resources */,
+				E64C90B62972E5D1004545BB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +284,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E64C90EB2972EA2B004545BB /* Run Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftgen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -180,6 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C90D32972E988004545BB /* Fonts.swift in Sources */,
+				E64C90E82972E9D6004545BB /* StringsConstant.swift in Sources */,
+				E64C90CD2972E95D004545BB /* Assets.swift in Sources */,
+				E64C90D02972E966004545BB /* UIColor+Colors.swift in Sources */,
+				E64C90EA2972E9ED004545BB /* LocalizeManager.swift in Sources */,
+				E64C90D12972E966004545BB /* UIImage+Images.swift in Sources */,
+				E64C90ED2972EAAA004545BB /* Fonts+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A3A2A5EA153C3D17603FEF9 /* Pods-UIComponents.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -330,6 +467,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA4E23DD145C0D1E13F229D5 /* Pods-UIComponents.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
