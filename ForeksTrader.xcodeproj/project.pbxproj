@@ -19,6 +19,15 @@
 		E64C90832972D49A004545BB /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64C90822972D49A004545BB /* UIComponents.framework */; };
 		E64C90842972D49A004545BB /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E64C90822972D49A004545BB /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E64C90F52972ED20004545BB /* splashLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = E64C90F42972ED20004545BB /* splashLoading.json */; };
+		E64C910C2972F8B7004545BB /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C910B2972F8B7004545BB /* BaseViewModel.swift */; };
+		E64C910E2972F8CC004545BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C910D2972F8CC004545BB /* BaseViewController.swift */; };
+		E64C91112972F92B004545BB /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91102972F92B004545BB /* Closures.swift */; };
+		E64C91172972F97B004545BB /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91162972F97B004545BB /* SplashRouter.swift */; };
+		E64C911A2972F9A2004545BB /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91192972F9A2004545BB /* SplashViewModel.swift */; };
+		E64C911C2972F9C5004545BB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C911B2972F9C5004545BB /* SplashViewController.swift */; };
+		E64C911F2972FA18004545BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C911E2972FA18004545BB /* HomeViewController.swift */; };
+		E64C91212972FA69004545BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91202972FA69004545BB /* HomeViewModel.swift */; };
+		E64C91232972FA9B004545BB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91222972FA9B004545BB /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +60,15 @@
 		E64C907E2972D497004545BB /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C90822972D49A004545BB /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C90F42972ED20004545BB /* splashLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splashLoading.json; sourceTree = "<group>"; };
+		E64C910B2972F8B7004545BB /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E64C910D2972F8CC004545BB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E64C91102972F92B004545BB /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		E64C91162972F97B004545BB /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		E64C91192972F9A2004545BB /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		E64C911B2972F9C5004545BB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		E64C911E2972FA18004545BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E64C91202972FA69004545BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E64C91222972FA9B004545BB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +125,8 @@
 		E64C903B29723DC7004545BB /* ForeksTrader */ = {
 			isa = PBXGroup;
 			children = (
+				E64C910F2972F91C004545BB /* Constants */,
+				E64C91092972F899004545BB /* Scene */,
 				E64C90F12972EC2F004545BB /* Resources */,
 				E64C90502972C75E004545BB /* App */,
 				E64C903C29723DC7004545BB /* AppDelegate.swift */,
@@ -133,6 +153,53 @@
 				E64C90F42972ED20004545BB /* splashLoading.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E64C91092972F899004545BB /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E64C911D2972F9F4004545BB /* Home */,
+				E64C91152972F96E004545BB /* Splash */,
+				E64C910A2972F89F004545BB /* Base */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E64C910A2972F89F004545BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E64C910B2972F8B7004545BB /* BaseViewModel.swift */,
+				E64C910D2972F8CC004545BB /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E64C910F2972F91C004545BB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E64C91102972F92B004545BB /* Closures.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E64C91152972F96E004545BB /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E64C91162972F97B004545BB /* SplashRouter.swift */,
+				E64C91192972F9A2004545BB /* SplashViewModel.swift */,
+				E64C911B2972F9C5004545BB /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E64C911D2972F9F4004545BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E64C911E2972FA18004545BB /* HomeViewController.swift */,
+				E64C91202972FA69004545BB /* HomeViewModel.swift */,
+				E64C91222972FA9B004545BB /* HomeRouter.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +338,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64C904129723DC7004545BB /* ViewController.swift in Sources */,
+				E64C91172972F97B004545BB /* SplashRouter.swift in Sources */,
+				E64C91112972F92B004545BB /* Closures.swift in Sources */,
+				E64C911A2972F9A2004545BB /* SplashViewModel.swift in Sources */,
+				E64C910C2972F8B7004545BB /* BaseViewModel.swift in Sources */,
 				E64C90542972CA40004545BB /* AppContainer.swift in Sources */,
+				E64C91232972FA9B004545BB /* HomeRouter.swift in Sources */,
 				E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */,
+				E64C91212972FA69004545BB /* HomeViewModel.swift in Sources */,
+				E64C911F2972FA18004545BB /* HomeViewController.swift in Sources */,
 				E64C90522972CA34004545BB /* AppRouter.swift in Sources */,
+				E64C910E2972F8CC004545BB /* BaseViewController.swift in Sources */,
+				E64C911C2972F9C5004545BB /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
