@@ -9,6 +9,10 @@ public extension UIImage {
   static var icArrowDown24: UIImage {
       return Asset.Images.icArrowDown24.image
   }
+
+  static var icArrowUp24: UIImage {
+      return Asset.Images.icArrowUp24.image
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
