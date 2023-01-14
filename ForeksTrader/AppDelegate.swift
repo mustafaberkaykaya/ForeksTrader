@@ -14,10 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        window = UIWindow()
-        window?.rootViewController = ViewController()
+        let bounds = UIScreen.main.bounds
+        self.window = UIWindow(frame: bounds)
         window?.makeKeyAndVisible()
+        app.router.window = window
+        app.router.startApplication()
         return true
     }
 }
-

@@ -12,6 +12,8 @@
 		E64C904129723DC7004545BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C904029723DC7004545BB /* ViewController.swift */; };
 		E64C904629723DC9004545BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64C904529723DC9004545BB /* Assets.xcassets */; };
 		E64C904929723DC9004545BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C904729723DC9004545BB /* LaunchScreen.storyboard */; };
+		E64C90522972CA34004545BB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90512972CA34004545BB /* AppRouter.swift */; };
+		E64C90542972CA40004545BB /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90532972CA40004545BB /* AppContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E64C904529723DC9004545BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64C904829723DC9004545BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64C904A29723DC9004545BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64C90512972CA34004545BB /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E64C90532972CA40004545BB /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		E64C90502972C75E004545BB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90512972CA34004545BB /* AppRouter.swift */,
+				E64C90532972CA40004545BB /* AppContainer.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -101,6 +107,7 @@
 			buildConfigurationList = E64C904D29723DC9004545BB /* Build configuration list for PBXNativeTarget "ForeksTrader" */;
 			buildPhases = (
 				736B76F46C0ACF3916EA0204 /* [CP] Check Pods Manifest.lock */,
+				E64C90552972CACA004545BB /* Run SwiftLint */,
 				E64C903529723DC7004545BB /* Sources */,
 				E64C903629723DC7004545BB /* Frameworks */,
 				E64C903729723DC7004545BB /* Resources */,
@@ -182,6 +189,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E64C90552972CACA004545BB /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -190,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64C904129723DC7004545BB /* ViewController.swift in Sources */,
+				E64C90542972CA40004545BB /* AppContainer.swift in Sources */,
 				E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */,
+				E64C90522972CA34004545BB /* AppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
