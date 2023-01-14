@@ -32,6 +32,8 @@
 		E64C90F82972ED6F004545BB /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */; };
 		E64C90FB2972ED9F004545BB /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90FA2972ED9F004545BB /* ReusableView.swift */; };
 		E64C90FD2972EFAE004545BB /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = E64C90FC2972EFAE004545BB /* swiftgen.yml */; };
+		E64C91262972FE85004545BB /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91252972FE85004545BB /* StockCell.swift */; };
+		E64C91282972FE91004545BB /* StockCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91272972FE91004545BB /* StockCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		E64C90F72972ED6F004545BB /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		E64C90FA2972ED9F004545BB /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		E64C90FC2972EFAE004545BB /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		E64C91252972FE85004545BB /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		E64C91272972FE91004545BB /* StockCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		E64C906A2972D43D004545BB = {
 			isa = PBXGroup;
 			children = (
+				E64C90FC2972EFAE004545BB /* swiftgen.yml */,
 				E64C90762972D43D004545BB /* UIComponents */,
 				E64C90752972D43D004545BB /* Products */,
 				2D657A1CD85FF9C0A8071D22 /* Pods */,
@@ -108,7 +113,7 @@
 		E64C90762972D43D004545BB /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				E64C90FC2972EFAE004545BB /* swiftgen.yml */,
+				E64C91242972FE4A004545BB /* Cell */,
 				E64C90F92972ED8E004545BB /* Protocols */,
 				E64C90F62972ED53004545BB /* Extension */,
 				E64C90EE2972EB94004545BB /* UIView */,
@@ -198,6 +203,15 @@
 				E64C90FA2972ED9F004545BB /* ReusableView.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E64C91242972FE4A004545BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E64C91252972FE85004545BB /* StockCell.swift */,
+				E64C91272972FE91004545BB /* StockCellModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F9BA11C7DF2B9A68C808B60E /* Frameworks */ = {
@@ -346,10 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64C91282972FE91004545BB /* StockCellModel.swift in Sources */,
 				E64C90F82972ED6F004545BB /* UITableView+Extensions.swift in Sources */,
 				E64C90FB2972ED9F004545BB /* ReusableView.swift in Sources */,
 				E64C90D32972E988004545BB /* Fonts.swift in Sources */,
 				E64C90E82972E9D6004545BB /* StringsConstant.swift in Sources */,
+				E64C91262972FE85004545BB /* StockCell.swift in Sources */,
 				E64C90CD2972E95D004545BB /* Assets.swift in Sources */,
 				E64C90D02972E966004545BB /* UIColor+Colors.swift in Sources */,
 				E64C90EA2972E9ED004545BB /* LocalizeManager.swift in Sources */,
