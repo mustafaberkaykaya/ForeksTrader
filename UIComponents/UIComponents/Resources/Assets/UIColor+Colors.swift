@@ -22,6 +22,10 @@ public extension UIColor {
       return Asset.Colors.appCloud.color
   }
 
+  static var appDark: UIColor {
+      return Asset.Colors.appDark.color
+  }
+
   static var appHoney: UIColor {
       return Asset.Colors.appHoney.color
   }
