@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  UIComponents
+
+  Created by Berkay on 14.01.2023.
+  
+*/
+
+// MARK: - SplashScreen
+"Splash.nonWifi" = "İnternet Bağlantınız Bulunmamaktadır.";
+
+// MARK: - HomeScreen
+"Home.symbol" = "Sembol";
+"Home.aa" = "Sembol";

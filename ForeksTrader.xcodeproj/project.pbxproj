@@ -18,6 +18,7 @@
 		E64C90802972D497004545BB /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E64C907E2972D497004545BB /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E64C90832972D49A004545BB /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64C90822972D49A004545BB /* UIComponents.framework */; };
 		E64C90842972D49A004545BB /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E64C90822972D49A004545BB /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E64C90F52972ED20004545BB /* splashLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = E64C90F42972ED20004545BB /* splashLoading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		E64C90532972CA40004545BB /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		E64C907E2972D497004545BB /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C90822972D49A004545BB /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64C90F42972ED20004545BB /* splashLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splashLoading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		E64C903B29723DC7004545BB /* ForeksTrader */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90F12972EC2F004545BB /* Resources */,
 				E64C90502972C75E004545BB /* App */,
 				E64C903C29723DC7004545BB /* AppDelegate.swift */,
 				E64C904029723DC7004545BB /* ViewController.swift */,
@@ -124,6 +127,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E64C90F12972EC2F004545BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90F42972ED20004545BB /* splashLoading.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +148,7 @@
 				E64C903629723DC7004545BB /* Frameworks */,
 				E64C903729723DC7004545BB /* Resources */,
 				E64C90812972D497004545BB /* Embed Frameworks */,
+				E9098D0382CFBCA5484965C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64C904929723DC9004545BB /* LaunchScreen.storyboard in Resources */,
+				E64C90F52972ED20004545BB /* splashLoading.json in Resources */,
 				E64C904629723DC9004545BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +245,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E9098D0382CFBCA5484965C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
