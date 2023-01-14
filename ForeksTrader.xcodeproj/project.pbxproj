@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		05D45B8E40C34278302164C7 /* Pods_ForeksTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2483CF92AD5A771B2D703CA /* Pods_ForeksTrader.framework */; };
 		E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C903C29723DC7004545BB /* AppDelegate.swift */; };
-		E64C903F29723DC7004545BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C903E29723DC7004545BB /* SceneDelegate.swift */; };
 		E64C904129723DC7004545BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C904029723DC7004545BB /* ViewController.swift */; };
-		E64C904429723DC7004545BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C904229723DC7004545BB /* Main.storyboard */; };
 		E64C904629723DC9004545BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64C904529723DC9004545BB /* Assets.xcassets */; };
 		E64C904929723DC9004545BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C904729723DC9004545BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,9 +20,7 @@
 		DF0C8A3B0BAB9C5C7B398D95 /* Pods-ForeksTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeksTrader.release.xcconfig"; path = "Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader.release.xcconfig"; sourceTree = "<group>"; };
 		E64C903929723DC7004545BB /* ForeksTrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeksTrader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C903C29723DC7004545BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E64C903E29723DC7004545BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E64C904029723DC7004545BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E64C904329723DC7004545BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E64C904529723DC9004545BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64C904829723DC9004545BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64C904A29723DC9004545BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +44,6 @@
 				653E67BB5E3431AD8C436134 /* Pods-ForeksTrader.debug.xcconfig */,
 				DF0C8A3B0BAB9C5C7B398D95 /* Pods-ForeksTrader.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +76,21 @@
 		E64C903B29723DC7004545BB /* ForeksTrader */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90502972C75E004545BB /* App */,
 				E64C903C29723DC7004545BB /* AppDelegate.swift */,
-				E64C903E29723DC7004545BB /* SceneDelegate.swift */,
 				E64C904029723DC7004545BB /* ViewController.swift */,
-				E64C904229723DC7004545BB /* Main.storyboard */,
 				E64C904529723DC9004545BB /* Assets.xcassets */,
 				E64C904729723DC9004545BB /* LaunchScreen.storyboard */,
 				E64C904A29723DC9004545BB /* Info.plist */,
 			);
 			path = ForeksTrader;
+			sourceTree = "<group>";
+		};
+		E64C90502972C75E004545BB /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +154,6 @@
 			files = (
 				E64C904929723DC9004545BB /* LaunchScreen.storyboard in Resources */,
 				E64C904629723DC9004545BB /* Assets.xcassets in Resources */,
-				E64C904429723DC7004545BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,21 +191,12 @@
 			files = (
 				E64C904129723DC7004545BB /* ViewController.swift in Sources */,
 				E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */,
-				E64C903F29723DC7004545BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E64C904229723DC7004545BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E64C904329723DC7004545BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E64C904729723DC9004545BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,7 +335,7 @@
 				INFOPLIST_FILE = ForeksTrader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,7 +364,7 @@
 				INFOPLIST_FILE = ForeksTrader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
