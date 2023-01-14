@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05D45B8E40C34278302164C7 /* Pods_ForeksTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2483CF92AD5A771B2D703CA /* Pods_ForeksTrader.framework */; };
 		E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C903C29723DC7004545BB /* AppDelegate.swift */; };
 		E64C903F29723DC7004545BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C903E29723DC7004545BB /* SceneDelegate.swift */; };
 		E64C904129723DC7004545BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C904029723DC7004545BB /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		653E67BB5E3431AD8C436134 /* Pods-ForeksTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeksTrader.debug.xcconfig"; path = "Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader.debug.xcconfig"; sourceTree = "<group>"; };
+		A2483CF92AD5A771B2D703CA /* Pods_ForeksTrader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForeksTrader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0C8A3B0BAB9C5C7B398D95 /* Pods-ForeksTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeksTrader.release.xcconfig"; path = "Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader.release.xcconfig"; sourceTree = "<group>"; };
 		E64C903929723DC7004545BB /* ForeksTrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeksTrader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C903C29723DC7004545BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E64C903E29723DC7004545BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D45B8E40C34278302164C7 /* Pods_ForeksTrader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FF3415CB08BD2FE8898A8B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				653E67BB5E3431AD8C436134 /* Pods-ForeksTrader.debug.xcconfig */,
+				DF0C8A3B0BAB9C5C7B398D95 /* Pods-ForeksTrader.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5042DFB3CA75E8DF5A49F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2483CF92AD5A771B2D703CA /* Pods_ForeksTrader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E64C903029723DC7004545BB = {
 			isa = PBXGroup;
 			children = (
 				E64C903B29723DC7004545BB /* ForeksTrader */,
 				E64C903A29723DC7004545BB /* Products */,
+				3FF3415CB08BD2FE8898A8B7 /* Pods */,
+				D5042DFB3CA75E8DF5A49F60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E64C904D29723DC9004545BB /* Build configuration list for PBXNativeTarget "ForeksTrader" */;
 			buildPhases = (
+				736B76F46C0ACF3916EA0204 /* [CP] Check Pods Manifest.lock */,
 				E64C903529723DC7004545BB /* Sources */,
 				E64C903629723DC7004545BB /* Frameworks */,
 				E64C903729723DC7004545BB /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		736B76F46C0ACF3916EA0204 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForeksTrader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E64C903529723DC7004545BB /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		E64C904E29723DC9004545BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653E67BB5E3431AD8C436134 /* Pods-ForeksTrader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		E64C904F29723DC9004545BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0C8A3B0BAB9C5C7B398D95 /* Pods-ForeksTrader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
