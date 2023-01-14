@@ -42,6 +42,7 @@ public enum Asset {
   }
   public enum Images {
     public static let icArrowDown24 = ImageAsset(name: "ic_arrow_down_24")
+    public static let icArrowUp24 = ImageAsset(name: "ic_arrow_up_24")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
