@@ -21,6 +21,7 @@ public struct StockFirstData: Decodable {
     public let hig: String?
     public let las: String?
     public let pdc: String?
+    public let gco: String?
 
     enum CodingKeys: String, CodingKey {
         case tke
@@ -35,6 +36,7 @@ public struct StockFirstData: Decodable {
         case hig
         case las
         case pdc
+        case gco
     }
 }
 
