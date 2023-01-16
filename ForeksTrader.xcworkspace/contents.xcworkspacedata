@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UIComponents/UIComponents.xcodeproj">
+      location = "group:ForeksTrader.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:DataProvider/DataProvider.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ForeksTrader.xcodeproj">
+      location = "group:UIComponents/UIComponents.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
