@@ -1,6 +1,5 @@
 # ForeksTrader
-The application that shows the movies by pulling them from the omdbapi service according to the value entered into Searchbar. 
-You can access the details of the films shown by tapping.
+The stock market application that I prepared for the Foreks task that makes an update every second.
 # Used Pods
 
 > Alamofire
