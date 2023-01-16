@@ -20,6 +20,7 @@ public class StockCell: UITableViewCell, ReusableView {
 
     private let arrowView: UIView = {
         let view = UIView()
+        view.backgroundColor = .clear
         view.width(25)
         return view
     }()
@@ -94,11 +95,9 @@ public class StockCell: UITableViewCell, ReusableView {
     
     public func set(viewModel: StockCellProtocol) {
         self.viewModel = viewModel
-        
+        configureContents()
     }
-    
 }
-
 
 // MARK: - UILayout
 extension StockCell {
@@ -142,10 +141,17 @@ extension StockCell {
 extension StockCell {
     
     private func configureContents() {
-        contentView.backgroundColor = .appDark
+        arrowDownImageView.isHidden = viewModel?.isDownArrowHidden ?? true
+        arrowUpImageView.isHidden = viewModel?.isUpArrowHidden ?? true
+        stockNameLabel.text = viewModel?.stockName
+        firstCriterionLabel.text = viewModel?.firstCriterionText
+        secondCriterionLabel.text = viewModel?.secondCriterionText
+        firstCriterionLabel.textColor = viewModel?.firstCriterionTextColor
+        secondCriterionLabel.textColor = viewModel?.secondCriterionTextColor
+        clockLabel.text = viewModel?.clockText
+        arrowView.backgroundColor = viewModel?.arrowViewBackgroundColor
+        contentView.backgroundColor = viewModel?.cellBackgroundColor
         arrowView.layer.cornerRadius = 4
-        arrowView.backgroundColor = .appPear
-        arrowDownImageView.isHidden = true
     }
 }
 
