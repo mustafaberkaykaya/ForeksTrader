@@ -9,10 +9,40 @@
 /* Begin PBXBuildFile section */
 		05D45B8E40C34278302164C7 /* Pods_ForeksTrader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2483CF92AD5A771B2D703CA /* Pods_ForeksTrader.framework */; };
 		E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C903C29723DC7004545BB /* AppDelegate.swift */; };
-		E64C904129723DC7004545BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C904029723DC7004545BB /* ViewController.swift */; };
 		E64C904629723DC9004545BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64C904529723DC9004545BB /* Assets.xcassets */; };
 		E64C904929723DC9004545BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C904729723DC9004545BB /* LaunchScreen.storyboard */; };
+		E64C90522972CA34004545BB /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90512972CA34004545BB /* AppRouter.swift */; };
+		E64C90542972CA40004545BB /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90532972CA40004545BB /* AppContainer.swift */; };
+		E64C907F2972D497004545BB /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64C907E2972D497004545BB /* DataProvider.framework */; };
+		E64C90802972D497004545BB /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E64C907E2972D497004545BB /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E64C90832972D49A004545BB /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64C90822972D49A004545BB /* UIComponents.framework */; };
+		E64C90842972D49A004545BB /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E64C90822972D49A004545BB /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E64C90F52972ED20004545BB /* splashLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = E64C90F42972ED20004545BB /* splashLoading.json */; };
+		E64C910C2972F8B7004545BB /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C910B2972F8B7004545BB /* BaseViewModel.swift */; };
+		E64C910E2972F8CC004545BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C910D2972F8CC004545BB /* BaseViewController.swift */; };
+		E64C91112972F92B004545BB /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91102972F92B004545BB /* Closures.swift */; };
+		E64C91172972F97B004545BB /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91162972F97B004545BB /* SplashRouter.swift */; };
+		E64C911A2972F9A2004545BB /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91192972F9A2004545BB /* SplashViewModel.swift */; };
+		E64C911C2972F9C5004545BB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C911B2972F9C5004545BB /* SplashViewController.swift */; };
+		E64C911F2972FA18004545BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C911E2972FA18004545BB /* HomeViewController.swift */; };
+		E64C91212972FA69004545BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91202972FA69004545BB /* HomeViewModel.swift */; };
+		E64C91232972FA9B004545BB /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C91222972FA9B004545BB /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E64C90812972D497004545BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E64C90842972D49A004545BB /* UIComponents.framework in Embed Frameworks */,
+				E64C90802972D497004545BB /* DataProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		653E67BB5E3431AD8C436134 /* Pods-ForeksTrader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeksTrader.debug.xcconfig"; path = "Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -20,10 +50,23 @@
 		DF0C8A3B0BAB9C5C7B398D95 /* Pods-ForeksTrader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForeksTrader.release.xcconfig"; path = "Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader.release.xcconfig"; sourceTree = "<group>"; };
 		E64C903929723DC7004545BB /* ForeksTrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForeksTrader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C903C29723DC7004545BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E64C904029723DC7004545BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E64C904529723DC9004545BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64C904829723DC9004545BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64C904A29723DC9004545BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64C90512972CA34004545BB /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E64C90532972CA40004545BB /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		E64C907E2972D497004545BB /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64C90822972D49A004545BB /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64C90F42972ED20004545BB /* splashLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splashLoading.json; sourceTree = "<group>"; };
+		E64C910B2972F8B7004545BB /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		E64C910D2972F8CC004545BB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E64C91102972F92B004545BB /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		E64C91162972F97B004545BB /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		E64C91192972F9A2004545BB /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		E64C911B2972F9C5004545BB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		E64C911E2972FA18004545BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E64C91202972FA69004545BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E64C91222972FA9B004545BB /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +75,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D45B8E40C34278302164C7 /* Pods_ForeksTrader.framework in Frameworks */,
+				E64C90832972D49A004545BB /* UIComponents.framework in Frameworks */,
+				E64C907F2972D497004545BB /* DataProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +95,8 @@
 		D5042DFB3CA75E8DF5A49F60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90822972D49A004545BB /* UIComponents.framework */,
+				E64C907E2972D497004545BB /* DataProvider.framework */,
 				A2483CF92AD5A771B2D703CA /* Pods_ForeksTrader.framework */,
 			);
 			name = Frameworks;
@@ -76,9 +123,11 @@
 		E64C903B29723DC7004545BB /* ForeksTrader */ = {
 			isa = PBXGroup;
 			children = (
+				E64C910F2972F91C004545BB /* Constants */,
+				E64C91092972F899004545BB /* Scene */,
+				E64C90F12972EC2F004545BB /* Resources */,
 				E64C90502972C75E004545BB /* App */,
 				E64C903C29723DC7004545BB /* AppDelegate.swift */,
-				E64C904029723DC7004545BB /* ViewController.swift */,
 				E64C904529723DC9004545BB /* Assets.xcassets */,
 				E64C904729723DC9004545BB /* LaunchScreen.storyboard */,
 				E64C904A29723DC9004545BB /* Info.plist */,
@@ -89,8 +138,65 @@
 		E64C90502972C75E004545BB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E64C90512972CA34004545BB /* AppRouter.swift */,
+				E64C90532972CA40004545BB /* AppContainer.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		E64C90F12972EC2F004545BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90F42972ED20004545BB /* splashLoading.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E64C91092972F899004545BB /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E64C911D2972F9F4004545BB /* Home */,
+				E64C91152972F96E004545BB /* Splash */,
+				E64C910A2972F89F004545BB /* Base */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		E64C910A2972F89F004545BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E64C910B2972F8B7004545BB /* BaseViewModel.swift */,
+				E64C910D2972F8CC004545BB /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E64C910F2972F91C004545BB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E64C91102972F92B004545BB /* Closures.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E64C91152972F96E004545BB /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E64C91162972F97B004545BB /* SplashRouter.swift */,
+				E64C91192972F9A2004545BB /* SplashViewModel.swift */,
+				E64C911B2972F9C5004545BB /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E64C911D2972F9F4004545BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E64C911E2972FA18004545BB /* HomeViewController.swift */,
+				E64C91202972FA69004545BB /* HomeViewModel.swift */,
+				E64C91222972FA9B004545BB /* HomeRouter.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +207,12 @@
 			buildConfigurationList = E64C904D29723DC9004545BB /* Build configuration list for PBXNativeTarget "ForeksTrader" */;
 			buildPhases = (
 				736B76F46C0ACF3916EA0204 /* [CP] Check Pods Manifest.lock */,
+				E64C90552972CACA004545BB /* Run SwiftLint */,
 				E64C903529723DC7004545BB /* Sources */,
 				E64C903629723DC7004545BB /* Frameworks */,
 				E64C903729723DC7004545BB /* Resources */,
+				E64C90812972D497004545BB /* Embed Frameworks */,
+				E9098D0382CFBCA5484965C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64C904929723DC9004545BB /* LaunchScreen.storyboard in Resources */,
+				E64C90F52972ED20004545BB /* splashLoading.json in Resources */,
 				E64C904629723DC9004545BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +292,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E64C90552972CACA004545BB /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		E9098D0382CFBCA5484965C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForeksTrader/Pods-ForeksTrader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,8 +334,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64C904129723DC7004545BB /* ViewController.swift in Sources */,
+				E64C91172972F97B004545BB /* SplashRouter.swift in Sources */,
+				E64C91112972F92B004545BB /* Closures.swift in Sources */,
+				E64C911A2972F9A2004545BB /* SplashViewModel.swift in Sources */,
+				E64C910C2972F8B7004545BB /* BaseViewModel.swift in Sources */,
+				E64C90542972CA40004545BB /* AppContainer.swift in Sources */,
+				E64C91232972FA9B004545BB /* HomeRouter.swift in Sources */,
 				E64C903D29723DC7004545BB /* AppDelegate.swift in Sources */,
+				E64C91212972FA69004545BB /* HomeViewModel.swift in Sources */,
+				E64C911F2972FA18004545BB /* HomeViewController.swift in Sources */,
+				E64C90522972CA34004545BB /* AppRouter.swift in Sources */,
+				E64C910E2972F8CC004545BB /* BaseViewController.swift in Sources */,
+				E64C911C2972F9C5004545BB /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +483,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QXM745HWL7;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ForeksTrader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -338,6 +493,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +501,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Berkay.ForeksTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,9 +514,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QXM745HWL7;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ForeksTrader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -367,6 +524,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +532,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Berkay.ForeksTrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

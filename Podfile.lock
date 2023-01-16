@@ -1,3 +1,36 @@
-PODFILE CHECKSUM: 39522e51657c6e76a7999b21047f435fcc6dc25c
+PODS:
+  - Alamofire (5.6.2)
+  - DropDown (2.3.13)
+  - lottie-ios (3.5.0)
+  - SwiftGen (6.6.2)
+  - SwiftLint (0.49.1)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.6)
+  - DropDown
+  - lottie-ios
+  - SwiftGen (~> 6.6)
+  - SwiftLint (~> 0.49)
+  - TinyConstraints (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - lottie-ios
+    - SwiftGen
+    - SwiftLint
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftLint: 32ee33ded0636d0905ef6911b2b67bbaeeedafa5
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: ea245530c24b798929c76866bf816a6f3776c50e
 
 COCOAPODS: 1.11.3

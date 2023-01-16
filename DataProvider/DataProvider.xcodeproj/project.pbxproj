@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E64C90642972D3D3004545BB /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E64C90632972D3D3004545BB /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64C90872972DB5F004545BB /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90862972DB5F004545BB /* HttpHeader.swift */; };
+		E64C90892972DB7C004545BB /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90882972DB7C004545BB /* HttpMethod.swift */; };
+		E64C908B2972DBB0004545BB /* NetworkConstracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C908A2972DBB0004545BB /* NetworkConstracts.swift */; };
+		E64C908D2972DBD7004545BB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C908C2972DBD7004545BB /* NetworkError.swift */; };
+		E64C908F2972DBE9004545BB /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C908E2972DBE9004545BB /* NetworkExecuter.swift */; };
+		E64C90922972DE00004545BB /* ForeksClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90912972DE00004545BB /* ForeksClient.swift */; };
+		E64C90962972DE9E004545BB /* StockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90952972DE9E004545BB /* StockData.swift */; };
+		E64C90982972DEA8004545BB /* StockFirstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90972972DEA8004545BB /* StockFirstData.swift */; };
+		E64C909B2972DED2004545BB /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C909A2972DED2004545BB /* Stock.swift */; };
+		E64C909D2972DEEA004545BB /* MyPageDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C909C2972DEEA004545BB /* MyPageDefaultsData.swift */; };
+		E64C909F2972DEF4004545BB /* MyPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C909E2972DEF4004545BB /* MyPageData.swift */; };
+		E64C90A22972DF3E004545BB /* ForeksError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90A12972DF3E004545BB /* ForeksError.swift */; };
+		E64C90A52972DF88004545BB /* StockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90A42972DF88004545BB /* StockRepository.swift */; };
+		E64C90A72972DFA0004545BB /* StockRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90A62972DF9F004545BB /* StockRepositoryProtocol.swift */; };
+		E64C90AA2972DFDF004545BB /* ForeksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90A92972DFDF004545BB /* ForeksService.swift */; };
+		E64C90AC2972DFE9004545BB /* ForeksServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C90AB2972DFE9004545BB /* ForeksServiceProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E64C90602972D3D3004545BB /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64C90632972D3D3004545BB /* DataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		E64C90862972DB5F004545BB /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		E64C90882972DB7C004545BB /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		E64C908A2972DBB0004545BB /* NetworkConstracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstracts.swift; sourceTree = "<group>"; };
+		E64C908C2972DBD7004545BB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E64C908E2972DBE9004545BB /* NetworkExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
+		E64C90912972DE00004545BB /* ForeksClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeksClient.swift; sourceTree = "<group>"; };
+		E64C90952972DE9E004545BB /* StockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockData.swift; sourceTree = "<group>"; };
+		E64C90972972DEA8004545BB /* StockFirstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockFirstData.swift; sourceTree = "<group>"; };
+		E64C909A2972DED2004545BB /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		E64C909C2972DEEA004545BB /* MyPageDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDefaultsData.swift; sourceTree = "<group>"; };
+		E64C909E2972DEF4004545BB /* MyPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageData.swift; sourceTree = "<group>"; };
+		E64C90A12972DF3E004545BB /* ForeksError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeksError.swift; sourceTree = "<group>"; };
+		E64C90A42972DF88004545BB /* StockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRepository.swift; sourceTree = "<group>"; };
+		E64C90A62972DF9F004545BB /* StockRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E64C90A92972DFDF004545BB /* ForeksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeksService.swift; sourceTree = "<group>"; };
+		E64C90AB2972DFE9004545BB /* ForeksServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeksServiceProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E64C905D2972D3D3004545BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E64C90562972D3D3004545BB = {
+			isa = PBXGroup;
+			children = (
+				E64C90622972D3D3004545BB /* DataProvider */,
+				E64C90612972D3D3004545BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E64C90612972D3D3004545BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90602972D3D3004545BB /* DataProvider.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E64C90622972D3D3004545BB /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90A32972DF77004545BB /* Repository */,
+				E64C90A82972DFCB004545BB /* Service */,
+				E64C90932972DE4A004545BB /* Model */,
+				E64C90902972DDBB004545BB /* Clients */,
+				E64C90852972DB4E004545BB /* Network */,
+				E64C90632972D3D3004545BB /* DataProvider.h */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		E64C90852972DB4E004545BB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90862972DB5F004545BB /* HttpHeader.swift */,
+				E64C90882972DB7C004545BB /* HttpMethod.swift */,
+				E64C908A2972DBB0004545BB /* NetworkConstracts.swift */,
+				E64C908C2972DBD7004545BB /* NetworkError.swift */,
+				E64C908E2972DBE9004545BB /* NetworkExecuter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E64C90902972DDBB004545BB /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90912972DE00004545BB /* ForeksClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		E64C90932972DE4A004545BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90A02972DF1D004545BB /* Error */,
+				E64C90992972DEBE004545BB /* StockList */,
+				E64C90942972DE8F004545BB /* StockData */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E64C90942972DE8F004545BB /* StockData */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90952972DE9E004545BB /* StockData.swift */,
+				E64C90972972DEA8004545BB /* StockFirstData.swift */,
+			);
+			path = StockData;
+			sourceTree = "<group>";
+		};
+		E64C90992972DEBE004545BB /* StockList */ = {
+			isa = PBXGroup;
+			children = (
+				E64C909A2972DED2004545BB /* Stock.swift */,
+				E64C909C2972DEEA004545BB /* MyPageDefaultsData.swift */,
+				E64C909E2972DEF4004545BB /* MyPageData.swift */,
+			);
+			path = StockList;
+			sourceTree = "<group>";
+		};
+		E64C90A02972DF1D004545BB /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90A12972DF3E004545BB /* ForeksError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		E64C90A32972DF77004545BB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90A42972DF88004545BB /* StockRepository.swift */,
+				E64C90A62972DF9F004545BB /* StockRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E64C90A82972DFCB004545BB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E64C90A92972DFDF004545BB /* ForeksService.swift */,
+				E64C90AB2972DFE9004545BB /* ForeksServiceProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E64C905B2972D3D3004545BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64C90642972D3D3004545BB /* DataProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E64C905F2972D3D3004545BB /* DataProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64C90672972D3D3004545BB /* Build configuration list for PBXNativeTarget "DataProvider" */;
+			buildPhases = (
+				E64C905B2972D3D3004545BB /* Headers */,
+				E64C905C2972D3D3004545BB /* Sources */,
+				E64C905D2972D3D3004545BB /* Frameworks */,
+				E64C905E2972D3D3004545BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataProvider;
+			productName = DataProvider;
+			productReference = E64C90602972D3D3004545BB /* DataProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E64C90572972D3D3004545BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E64C905F2972D3D3004545BB = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+					};
+				};
+			};
+			buildConfigurationList = E64C905A2972D3D3004545BB /* Build configuration list for PBXProject "DataProvider" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E64C90562972D3D3004545BB;
+			productRefGroup = E64C90612972D3D3004545BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E64C905F2972D3D3004545BB /* DataProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E64C905E2972D3D3004545BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E64C905C2972D3D3004545BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64C909D2972DEEA004545BB /* MyPageDefaultsData.swift in Sources */,
+				E64C908B2972DBB0004545BB /* NetworkConstracts.swift in Sources */,
+				E64C908D2972DBD7004545BB /* NetworkError.swift in Sources */,
+				E64C90AC2972DFE9004545BB /* ForeksServiceProtocol.swift in Sources */,
+				E64C90922972DE00004545BB /* ForeksClient.swift in Sources */,
+				E64C90A22972DF3E004545BB /* ForeksError.swift in Sources */,
+				E64C90AA2972DFDF004545BB /* ForeksService.swift in Sources */,
+				E64C90962972DE9E004545BB /* StockData.swift in Sources */,
+				E64C90892972DB7C004545BB /* HttpMethod.swift in Sources */,
+				E64C90A52972DF88004545BB /* StockRepository.swift in Sources */,
+				E64C90982972DEA8004545BB /* StockFirstData.swift in Sources */,
+				E64C908F2972DBE9004545BB /* NetworkExecuter.swift in Sources */,
+				E64C90872972DB5F004545BB /* HttpHeader.swift in Sources */,
+				E64C909B2972DED2004545BB /* Stock.swift in Sources */,
+				E64C90A72972DFA0004545BB /* StockRepositoryProtocol.swift in Sources */,
+				E64C909F2972DEF4004545BB /* MyPageData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E64C90652972D3D3004545BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E64C90662972D3D3004545BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E64C90682972D3D3004545BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Berkay.DataProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E64C90692972D3D3004545BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Berkay.DataProvider;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E64C905A2972D3D3004545BB /* Build configuration list for PBXProject "DataProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64C90652972D3D3004545BB /* Debug */,
+				E64C90662972D3D3004545BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E64C90672972D3D3004545BB /* Build configuration list for PBXNativeTarget "DataProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64C90682972D3D3004545BB /* Debug */,
+				E64C90692972D3D3004545BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E64C90572972D3D3004545BB /* Project object */;
+}
