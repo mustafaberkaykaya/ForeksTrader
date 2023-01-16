@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MyPageDefaultsData: Decodable {
+public struct MyPageDefaultsData: Decodable, Equatable {
     public let cod: String?
     public let gro: String?
     public let tke: String?
@@ -19,4 +19,8 @@ public struct MyPageDefaultsData: Decodable {
         case tke
         case def
     }
+    
+    public static func == (lhs: MyPageDefaultsData, rhs: MyPageDefaultsData) -> Bool {
+         return lhs.cod == rhs.cod && lhs.gro == rhs.gro && lhs.tke == rhs.tke && lhs.def == rhs.def
+     }
 }

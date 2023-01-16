@@ -34,7 +34,6 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         let label = UILabel()
         label.font = .interMedium10
         label.textColor = .appWhite
-        label.text = "Grup Kodu"
         return label
     }()
     
@@ -42,7 +41,6 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         let label = UILabel()
         label.font = .interMedium10
         label.textColor = .appWhite
-        label.text = "Son"
         return label
     }()
     
@@ -73,6 +71,8 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         super.viewDidLoad()
         addSubViews()
         configureContents()
+        subscribeViewModel()
+        viewModel.didLoad()
     }
 }
 
@@ -133,7 +133,6 @@ extension HomeViewController {
     private func configureContents() {
         configureCriterionElements()
         configureDropDownMenus()
-        tableView.delegate = self
         tableView.dataSource = self
     }
     
@@ -153,10 +152,18 @@ extension HomeViewController {
     private func configureDropDownMenus() {
         firstDropDown.anchorView = firstCriterionView
         firstDropDown.direction = .bottom
-        firstDropDown.dataSource = ["1", "2", "3"]
         secondDropDown.anchorView = secondCriterionView
         secondDropDown.direction = .bottom
-        secondDropDown.dataSource = ["4", "5", "6"]
+        firstDropDown.selectionAction = { [weak self] (_, item: String) in
+            guard let self else { return }
+            self.firstCriterionLabel.text = item
+            self.viewModel.firstDropDownMenuSelected(item: item)
+        }
+        secondDropDown.selectionAction = { [weak self] (_, item: String) in
+            guard let self else { return }
+            self.secondCriterionLabel.text = item
+            self.viewModel.secondDropDownMenuSelected(item: item)
+        }
     }
 }
 
@@ -173,9 +180,28 @@ extension HomeViewController {
     }
 }
 
-// MARK: - UITableViewDelegate
-extension HomeViewController: UITableViewDelegate {
+// MARK: - SubscribeViewModel
+extension HomeViewController {
     
+    private func subscribeViewModel() {
+        viewModel.reloadData = { [weak self] in
+            guard let self = self else { return }
+            self.tableView.reloadData()
+        }
+        
+        viewModel.setCriteria = { [weak self] in
+            guard let self = self else { return }
+            if self.viewModel.criteria.count > 2 {
+                self.firstCriterionLabel.text = self.viewModel.criteria[0].name
+                self.secondCriterionLabel.text = self.viewModel.criteria[1].name
+            }
+            for criteria in self.viewModel.criteria {
+                guard let name = criteria.name else { return }
+                self.firstDropDown.dataSource.append(name)
+                self.secondDropDown.dataSource.append(name)
+            }
+        }
+    }
 }
 
 // MARK: - UITableViewDataSource
